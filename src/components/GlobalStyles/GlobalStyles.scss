@@ -2,10 +2,17 @@
 @import url("https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500;600;700;800;900&display=swap");
 
 :root {
-  --primary: #3f6cdf;
+  --primary: #2557a7;
+  --black: #000;
+  --white: #fff;
+  --text-color: #2d2d2d;
+
+  --default-layout-header-height: 74px;
 }
 
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
@@ -14,9 +21,20 @@ html {
 }
 
 body {
-  font-family: 'Jost', sans-serif;
+  font-family: "Jost", sans-serif;
   font-size: 1.6rem;
   font-weight: 400;
   line-height: 1.75;
   text-rendering: optimizeSpeed;
+}
+
+button,
+input,
+[tabindex] {
+  outline: none;
+  border: none;
+}
+a[href] {
+  color: var(--text-color);
+  text-decoration: none;
 }
