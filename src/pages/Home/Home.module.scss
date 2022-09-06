@@ -1,4 +1,69 @@
+.layout {
+  margin: 0 auto;
+}
+
 .home-explore {
-  
-  width: 740px;
+  width: 1400px;
+  padding-top: 100px;
+  height: 640px;
+  position: relative;
+
+  .title {
+    width: 800px;
+    font-size: 5rem;
+    text-align: left;
+  }
+
+  .sub-title {
+    margin: 20px 0;
+    text-align: left;
+  }
+
+  .popular-search {
+    margin-top: 20px;
+  }
+
+  &::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0px;
+    right: 0;
+    max-width: 100%;
+    z-index: -1;
+    background-image: url("../../assets/image/bg_home.jpg");
+    background-repeat: no-repeat;
+  }
+}
+
+.job-categories {
+  width: 1300px;
+  margin: 50px 0;
+
+  .cards {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+  }
+}
+
+.title {
+  text-align: center;
+  font-size: 30px;
+}
+
+.sub-title {
+  text-align: center;
+  margin-bottom: 40px;
+  color: var(--text-color-sub);
+}
+
+.testimonials {
+  width: 1300px;
+  margin: 50px 0;
+
+  .items {
+  }
 }

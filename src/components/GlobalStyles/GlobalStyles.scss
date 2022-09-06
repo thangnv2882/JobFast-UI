@@ -1,11 +1,12 @@
 @import "normalize.css";
-@import url("https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500;600;700;800;900&display=swap");
+// @import url("https://fonts.googleapis.com/css2?family=Jost:wght@200;300;400;500;600;700;800;900&display=swap");
 
 :root {
   --primary: #2557a7;
   --black: #000;
   --white: #fff;
   --text-color: #2d2d2d;
+  --text-color-sub: #696969;
 
   --default-layout-header-height: 74px;
 }
@@ -37,4 +38,10 @@ input,
 a[href] {
   color: var(--text-color);
   text-decoration: none;
+}
+
+// Fonts emmbeded
+@font-face {
+  font-family: Jost;
+  src: url('/assets/fonts/92zatBhPNqw73oTd4g.woff2');
 }
