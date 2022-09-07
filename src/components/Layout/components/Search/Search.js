@@ -1,6 +1,6 @@
 import classNames from "classnames/bind";
 import styles from "./Search.module.scss";
-import Button from "../Button";
+import Button from "../../../Button";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import {
@@ -11,9 +11,14 @@ import {
 
 const cx = classNames.bind(styles);
 
-function Search() {
+function Search( { home = false, find = false } ) {
+
+  const classes = [cx("wrapper", {
+    home,
+    find
+  })]
   return (
-    <div className={cx("wrapper")}>
+    <div className={classes}>
       <div className={cx("box")}>
         <label htmlFor="what">What</label>
         <input
@@ -38,7 +43,7 @@ function Search() {
           <FontAwesomeIcon icon={faLocationDot} />
         </button>
       </div>
-      <Button text={`Find jobs`} />
+      <Button primary>Find jobs</Button>
     </div>
   );
 }

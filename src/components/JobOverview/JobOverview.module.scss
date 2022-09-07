@@ -1,0 +1,64 @@
+.wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1.4rem;
+  background-color: #fff;
+  box-shadow: 0 0 8px 0 rgb(99 99 99 / 20%);
+  padding: 1.4rem;
+  margin-bottom: 2rem;
+  border: 1px solid #949494;
+  border-radius: 0.5rem;
+  transition: 0.5s;
+
+  &:hover {
+    box-shadow: 0 0 15px 0 rgb(180, 180, 180);
+    cursor: pointer;
+    transition: 0.5s;
+  }
+  &:active {
+    border: 1px solid var(--primary);
+  }
+
+  img {
+    width: 70px;
+    height: 70px;
+    border-radius: 20px;
+  }
+}
+
+.job-info {
+}
+
+.job-name {
+}
+
+.job-company {
+}
+
+.job-address {
+  max-width: 90%;
+}
+.action {
+  position: absolute;
+  top: 1rem;
+  right: 1rem;
+  width: 3.2rem;
+  height: 3.2rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6rem;
+  &:hover {
+    border-radius: 50%;
+    background-color: var(--background-color-gray);
+    cursor: pointer;
+  }
+}
+.time-up {
+  position: absolute;
+  bottom: 1rem;
+  right: 1rem;
+  color: var(--text-color-sub);
+  font-size: 1.2rem;
+}

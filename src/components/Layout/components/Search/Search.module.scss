@@ -1,12 +1,20 @@
 .wrapper {
-  width: 900px;
+  width: 100%;
   display: flex;
   justify-content: space-between;
+  margin: 20px 0;
+}
+
+.home {
+  width: 900px;
+}
+.find {
+  width: 100%;
 }
 
 .box {
   position: relative;
-  width: 44%;
+  width: 43%;
   height: 45px;
   display: flex;
   align-items: center;
@@ -44,22 +52,3 @@
   transform: translateY(-50% );
   background-color: transparent;
 }
-
-// .search-btn {
-//   width: max-content;
-//   cursor: pointer;
-//   font-weight: 700;
-//   padding: 0.75rem 1.6rem;
-//   border: 0.0625rem solid transparent;
-//   border-radius: 0.5rem;
-//   color: #fff;
-//   background-color: var(--primary);
-//   text-align: center;
-//   &:hover {
-//     background-color: #164081;
-//   }
-//   &:active {
-//     background: #0d2d5e;
-//     box-shadow: inset 0 2px 4px RGB(45 45 45/20%),inset 0 1px 3px RGB(45 45 45/12%),inset 0 0 2px RGB(45 45 45/20%);
-//   }
-// }

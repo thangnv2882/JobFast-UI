@@ -6,7 +6,7 @@ import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
 import Search from "~/components/Layout/components/Search";
-import JobCard from "~/components/Layout/components/JobCard";
+import JobCard from "~/components/JobCard";
 import Testimonial from "~/components/Layout/components/Testimonial";
 
 const cx = classNames.bind(styles);
@@ -21,7 +21,7 @@ function Home() {
     slidesToShow: 3,
     slidesToScroll: 1,
     autoplay: true,
-    autoplaySpeed: 2000,
+    autoplaySpeed: 3000,
     pauseOnHover: true
   };
 
@@ -32,7 +32,7 @@ function Home() {
         <p className={cx("sub-title")}>
           Find Jobs, Employment & Career Opportunities
         </p>
-        <Search />
+        <Search home />
         <div className={cx("popular-search")}>
           Popular search:
           <Link to={"."}> Web, </Link>
