@@ -6,22 +6,27 @@ import { faHeart as faHeart1 } from "@fortawesome/free-regular-svg-icons";
 import {
   faEllipsisVertical,
   faHeart as faHeart2,
-  faMoneyBill,
+  faMoneyBill, 
 } from "@fortawesome/free-solid-svg-icons";
 
 const cx = classNames.bind(styles);
 
-function JobOverview({ data }) {
+function JobOverview({ data, onClick }) {
+
+  const props = {
+    onClick
+  };
+
   return (
-    <div className={cx("wrapper")}>
+    <div className={cx("wrapper")} {...props}>
       <img src={data.avatar} alt="avatar" />
       <div className={cx("job-info")}>
-        <p className={cx("job-name")}> {data.name} </p>
+        <p className={cx("job-name")}> {data.jobName} </p>
         <p className={cx("job-company")}> {data.company} </p>
-        <p className={cx("job-address")}> {data.address} </p>
+        <p className={cx("job-address")}> {data.jobLocation} </p>
         <div className={cx("job-salary")}>
           <FontAwesomeIcon icon={faMoneyBill} />
-          <span className={cx("")}> {data.salary} </span>
+          <span> {data.salary} </span> 
         </div>
       </div>
       <div className={cx("right")}>

@@ -1,0 +1,128 @@
+.wrapper {
+  height: 99%;
+  gap: 1.4rem;
+  background-color: #fff;
+  box-shadow: 0 0 8px 0 rgb(99 99 99 / 20%);
+  padding: 1.4rem;
+  margin-left: 0.8rem;
+  border: 1px solid #949494;
+  border-radius: 0.5rem;
+  overflow-y: scroll;
+
+  &:active {
+    border: 1px solid var(--primary);
+  }
+}
+
+::-webkit-scrollbar {
+  width: 0.6rem;
+}
+
+::-webkit-scrollbar-track {
+  background-color: rgb(226, 226, 226);
+  border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgb(184, 184, 184);
+  border-radius: 1rem;
+}
+
+.detail-overview {
+  position: relative;
+  margin-bottom: 3.2rem;
+
+  &:before {
+    content: "";
+    width: 100%;
+    height: 0.2rem;
+    position: absolute;
+    background-color: var(--background-color-gray);
+    top: 100%;
+    left: 0;
+    margin-top: 1.4rem;
+    border-radius: 0.5rem;
+  }
+}
+
+.job-name {
+  font-size: 1.8rem;
+  font-weight: 700;
+  line-height: 20px;
+  margin-bottom: 3px !important;
+}
+
+.job-info {
+  font-size: 1.4rem;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.5rem;
+
+  .center {
+    width: 5px;
+  }
+}
+
+.action {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 1.6rem;
+  margin-top: 1rem;
+}
+
+.detail-content {
+  position: relative;
+  margin-bottom: 3.2rem;
+
+  &:before {
+    content: "";
+    width: 100%;
+    height: 0.2rem;
+    position: absolute;
+    background-color: var(--background-color-gray);
+    top: 100%;
+    left: 0;
+    margin-top: 1.4rem;
+    border-radius: 0.5rem;
+  }
+}
+
+.title {
+  font-size: 1.6rem;
+  font-weight: 700;
+}
+
+.sub-title {
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+.detail {
+  font-size: 1.4rem;
+  margin-left: 2rem;
+}
+
+.job-type {
+}
+.flex {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0.2rem 0;
+  font-size: 1.4rem;
+
+  .icon {
+    width: 3rem;
+    text-align: center;
+    margin-right: 1rem;
+  }
+}
+
+.createAt {
+  font-size: 1.4rem;
+  color: var(--text-color);
+  margin-bottom: 1rem;
+}
+

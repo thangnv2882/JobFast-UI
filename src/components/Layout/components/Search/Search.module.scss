@@ -2,7 +2,7 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
-  margin: 20px 0;
+  margin: 1rem 0;
 }
 
 .home {
@@ -44,7 +44,9 @@
 .clear-icon,
 .search-icon,
 .location-icon {
-  font-size: 1.2rem;
+  width: 15px;
+
+  font-size: 1.6rem;
   position: absolute;
   right: 14px;
   top: 50%;

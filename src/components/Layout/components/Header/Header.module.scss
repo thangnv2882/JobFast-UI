@@ -4,11 +4,10 @@
 }
 
 .inner {
+  height: 100%;
   display: flex;
   justify-content: space-between;
-  height: 100%;
   padding: 0 10rem;
-
   border-bottom-style: solid;
   border-bottom-width: 0.1rem;
   border-bottom-color: #e4e2e0;

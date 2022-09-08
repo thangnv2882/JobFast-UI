@@ -10,7 +10,7 @@
   border-radius: 8px;
   box-shadow: 0 0 15px 0 rgba(64, 79, 104, 0.1);
   transition: 0.5s;
-  
+
   &:hover {
     cursor: pointer;
     box-shadow: 0 0 15px 0 rgba(64, 79, 104, 0.3);
@@ -42,10 +42,6 @@
   border-radius: 8px;
 }
 
-.card-info {
-
-}
-
 .card-name {
   transition: 0.5s;
   font-weight: 600;
@@ -53,5 +49,4 @@
 
 .card-nums {
   color: var(--text-color-sub);
-
 }

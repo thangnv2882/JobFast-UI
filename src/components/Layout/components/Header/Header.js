@@ -22,7 +22,7 @@ function Header() {
         </div>
 
         <div className={cx("action")}>
-          <Button register>Register</Button>
+          <Button register >Register</Button>
           <Button primary>Login</Button>
         </div>
       </div>

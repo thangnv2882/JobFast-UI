@@ -3,14 +3,16 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow: hidden;
 }
 
 .search-filter {
   width: 100%;
   display: flex;
-  gap: 20px;
+  gap: 2rem;
   align-items: center;
-  margin-bottom: 50px;
+  margin-bottom: 2rem;
+  // max-height: calc(100vh - 500px) ;
 }
 
 .filter-result {
@@ -21,32 +23,35 @@
   width: 100%;
   display: flex;
   justify-content: space-between;
+  max-height: calc(100vh - 210px);
+
 }
 
 .job-overview {
   width: 45%;
-  max-height: 100vh;
+  // max-height: calc(100vh - 226px);
   overflow-y: scroll;
 }
-
+.search-text {
+  font-size: 1.4rem;
+  color: var(--text-color);
+  font-style: italic;
+  font-weight: 600;
+}
 ::-webkit-scrollbar {
-  width: 0.5rem;
+  width: 0.6rem;
 }
 
 ::-webkit-scrollbar-track {
-  box-shadow: 0 0 5px grey;
-  border-radius: 10px;
+  background-color: rgb(226, 226, 226);
+  border-radius: 1rem;
 }
 
 ::-webkit-scrollbar-thumb {
   background: rgb(184, 184, 184);
-  border-radius: 10px;
+  border-radius: 1rem;
 }
 
-// ::-webkit-scrollbar-thumb:hover {
-//   background: rgb(54, 56, 58);
-// }
-
-.job-details {
-  width: 54%;
+.job-detail {
+  width: 55%;
 }
