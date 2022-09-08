@@ -1,12 +1,13 @@
 .wrapper {
   position: relative;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   gap: 1.4rem;
   background-color: #fff;
   box-shadow: 0 0 8px 0 rgb(99 99 99 / 20%);
   padding: 1.4rem;
-  margin-bottom: 2rem;
+  margin-bottom: 0.8rem;
+  margin-right: 0.8rem;
   border: 1px solid #949494;
   border-radius: 0.5rem;
   transition: 0.5s;
@@ -21,23 +22,38 @@
   }
 
   img {
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     border-radius: 20px;
   }
 }
 
 .job-info {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+  max-width: 100%;
 }
 
 .job-name {
+  font-size: 1.8rem;
+  font-weight: 600;
 }
 
 .job-company {
+  color: var(--text-color);
+  font-size: 1.4rem;
 }
 
 .job-address {
-  max-width: 90%;
+  color: var(--text-color);
+  font-size: 1.2rem;
+}
+.job-salary {
+  font-size: 1.2rem;
+  background-color: var(--background-color-gray);
+  padding: 0.2rem 1.6rem;
+  border-radius: 0.2rem;
 }
 .action {
   position: absolute;

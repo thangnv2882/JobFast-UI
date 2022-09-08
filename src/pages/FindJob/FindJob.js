@@ -38,6 +38,7 @@ function FindJob() {
       company: "Cong ty A",
       address: "Ha Noi A",
       createAt: "22/2/2222",
+      salary: "5,300,000 VND"
     },
     {
       avatar: "https://i.insider.com/61d1c0e2aa741500193b2d18?width=700",
@@ -45,6 +46,8 @@ function FindJob() {
       company: "Cong ty B",
       address: "Ha Noi B",
       createAt: "22/2/2222",
+      salary: "6,000,000 VND"
+
     },
     {
       avatar: "https://i.insider.com/61d1c0e2aa741500193b2d18?width=700",
@@ -52,6 +55,35 @@ function FindJob() {
       company: "Cong ty C",
       address: "Ha Noi C",
       createAt: "22/2/2222",
+      salary: "10,500,000 VND"
+
+    },
+    {
+      avatar: "https://i.insider.com/61d1c0e2aa741500193b2d18?width=700",
+      name: "Lap trinh C++",
+      company: "Cong ty C",
+      address: "Ha Noi C",
+      createAt: "22/2/2222",
+      salary: "10,500,000 VND"
+
+    },
+    {
+      avatar: "https://i.insider.com/61d1c0e2aa741500193b2d18?width=700",
+      name: "Lap trinh C++",
+      company: "Cong ty C",
+      address: "Ha Noi C",
+      createAt: "22/2/2222",
+      salary: "10,500,000 VND"
+
+    },
+    {
+      avatar: "https://i.insider.com/61d1c0e2aa741500193b2d18?width=700",
+      name: "Lap trinh C++",
+      company: "Cong ty C",
+      address: "Ha Noi C",
+      createAt: "22/2/2222",
+      salary: "10,500,000 VND"
+
     },
   ];
 

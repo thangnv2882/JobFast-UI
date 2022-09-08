@@ -3,7 +3,11 @@ import styles from "./JobOverview.module.scss";
 
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faHeart as faHeart1 } from "@fortawesome/free-regular-svg-icons";
-import { faEllipsisVertical, faHeart as faHeart2 } from "@fortawesome/free-solid-svg-icons";
+import {
+  faEllipsisVertical,
+  faHeart as faHeart2,
+  faMoneyBill,
+} from "@fortawesome/free-solid-svg-icons";
 
 const cx = classNames.bind(styles);
 
@@ -15,9 +19,13 @@ function JobOverview({ data }) {
         <p className={cx("job-name")}> {data.name} </p>
         <p className={cx("job-company")}> {data.company} </p>
         <p className={cx("job-address")}> {data.address} </p>
+        <div className={cx("job-salary")}>
+          <FontAwesomeIcon icon={faMoneyBill} />
+          <span className={cx("")}> {data.salary} </span>
+        </div>
       </div>
       <div className={cx("right")}>
-        <div className={cx('action')}>
+        <div className={cx("action")}>
           <FontAwesomeIcon icon={faEllipsisVertical} />
         </div>
         <div className={cx("time-up")}>
