@@ -2,6 +2,7 @@ import classNames from "classnames/bind";
 import styles from "./Header.module.scss";
 import images from "~/assets/image";
 import Button from "~/components/Button";
+import config from "~/config";
 
 import { Link } from "react-router-dom";
 
@@ -12,12 +13,12 @@ function Header() {
     <header className={cx("wrapper")}>
       <div className={cx("inner")}>
         <div className={cx("left")}>
-          <Link to={"."} className={cx("logo")}>
+          <Link to={config.routes.home} className={cx("logo")}>
             <img src={images.logo} alt="logo" />
           </Link>
           <div className={cx("menu")}>
-            <Link to={"."}>Find jobs</Link>
-            <Link to={"."}>Company</Link>
+            <Link to={config.routes.findJob}>Find jobs</Link>
+            <Link to={config.routes.company}>Company</Link>
           </div>
         </div>
 
