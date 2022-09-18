@@ -17,7 +17,7 @@ function FindJob() {
   let searchText = "backend";
 
   const [jobActive, setJobActive] = useState(1);
-  const [showFilter, setShowFilter] = useState("hide");
+  const [showFilter, setShowFilter] = useState(false);
 
   const dataFilter = [
     {
@@ -106,13 +106,7 @@ function FindJob() {
       numberOfRecruitments: "10",
     },
   ];
-
-  // const handleJob = () => {
-  //   setJobActive(index);
-  // }
   const [filterSelection, setFilterSelection] = useState();
-  // const handleFilter = () => {
-  // };
 
   return (
     <div>
@@ -120,13 +114,19 @@ function FindJob() {
         <Search find />
         <div className={cx("search-filter")}>
           {dataFilter.map((result, index) => (
-            <Tippy
+            <Button
               key={index}
-              placement={"bottom-start"}
-              interactive
-              render={(attrs) => (
-                <div className="filter-result" tabIndex="-1" {...attrs}>
-                  {result.sub.map((sub, index) => (
+              filter
+              rightIcon={<FontAwesomeIcon icon={faCaretDown} />}
+              onClick={() => {
+                setShowFilter(result.title);
+              }}
+            >
+              { result.sub.includes(filterSelection) ? `${filterSelection}` : result.title}
+
+              <div className={cx("filter-result")}>
+                {!!(showFilter === result.title) &&
+                  result.sub.map((sub, index) => (
                     <PopperWrapper key={index}>
                       <p
                         onClick={() => {
@@ -137,26 +137,11 @@ function FindJob() {
                       </p>
                     </PopperWrapper>
                   ))}
-                </div>
-              )}
-            >
-              <div className={cx("filter-name")}>
-                <Button
-                  children={ filterSelection || result.title}
-                  key={index}
-                  filter
-                  rightIcon={<FontAwesomeIcon icon={faCaretDown} />}
-                  onClick={() => {
-                    setShowFilter("show");
-                  }}
-                >
-                  
-                </Button>
               </div>
-            </Tippy>
+            </Button>
           ))}
-
         </div>
+
         <div className={cx("search-result")}>
           <div className={cx("job-overview")}>
             {!!searchText && (

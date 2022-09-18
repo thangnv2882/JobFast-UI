@@ -5,7 +5,7 @@
   align-items: center;
   overflow: hidden;
 }
-
+ 
 .search-filter {
   width: 100%;
   display: flex;
@@ -13,10 +13,7 @@
   align-items: center;
   margin-bottom: 2rem;
   // max-height: calc(100vh - 500px) ;
-}
-
-.filter-result {
-  width: 200px;
+  // position: relative;
 }
 
 .search-result {
@@ -24,7 +21,6 @@
   display: flex;
   justify-content: space-between;
   max-height: calc(100vh - 210px);
-
 }
 
 .job-overview {
@@ -54,4 +50,10 @@
 
 .job-detail {
   width: 55%;
+}
+.filter-result {
+  position: absolute;
+  top: 100%;
+  z-index: 1000;
+  left: 0;
 }

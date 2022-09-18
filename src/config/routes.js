@@ -1,7 +1,8 @@
 const routes = {
   home: '/',
   findJob: '/find-job',
-  company: '/company',
+  companies: '/companies',
+  company: '/cmp/'
 };
 
 export default routes;

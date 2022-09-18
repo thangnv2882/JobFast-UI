@@ -18,7 +18,7 @@ function Header() {
           </Link>
           <div className={cx("menu")}>
             <Link to={config.routes.findJob}>Find jobs</Link>
-            <Link to={config.routes.company}>Company</Link>
+            <Link to={config.routes.companies}>Company</Link>
           </div>
         </div>
 

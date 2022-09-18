@@ -8,7 +8,9 @@ import {
   faHeart as faHeart2,
   faMoneyBill, 
 } from "@fortawesome/free-solid-svg-icons";
+import { Link } from "react-router-dom";
 
+import routes from "~/config/routes";
 const cx = classNames.bind(styles);
 
 function JobOverview({ data, onClick }) {
@@ -22,7 +24,7 @@ function JobOverview({ data, onClick }) {
       <img src={data.avatar} alt="avatar" />
       <div className={cx("job-info")}>
         <p className={cx("job-name")}> {data.jobName} </p>
-        <p className={cx("job-company")}> {data.company} </p>
+        <Link to={`${routes.company}${data.id}`} className={cx("job-company")} > {data.company} </Link>
         <p className={cx("job-address")}> {data.jobLocation} </p>
         <div className={cx("job-salary")}>
           <FontAwesomeIcon icon={faMoneyBill} />
