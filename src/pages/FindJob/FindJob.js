@@ -17,7 +17,7 @@ function FindJob() {
   let searchText = "backend";
 
   const [jobActive, setJobActive] = useState(1);
-  const [showFilter, setShowFilter] = useState(false);
+  const [showFilter, setShowFilter] = useState();
 
   const dataFilter = [
     {
@@ -107,6 +107,7 @@ function FindJob() {
     },
   ];
   const [filterSelection, setFilterSelection] = useState();
+  const [buttonValue, setButtonValue] = useState();
 
   return (
     <div>
@@ -119,11 +120,12 @@ function FindJob() {
               filter
               rightIcon={<FontAwesomeIcon icon={faCaretDown} />}
               onClick={() => {
-                setShowFilter(result.title);
+                !showFilter ? setShowFilter(result.title) : setShowFilter(false);
               }}
             >
-              { result.sub.includes(filterSelection) ? `${filterSelection}` : result.title}
-
+              {result.sub.includes(filterSelection)
+                ? filterSelection
+                : result.title}
               <div className={cx("filter-result")}>
                 {!!(showFilter === result.title) &&
                   result.sub.map((sub, index) => (

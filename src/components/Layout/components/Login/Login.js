@@ -1,5 +1,5 @@
 import classNames from "classnames/bind";
-import styles from "./Header.module.scss";
+import styles from "../Header/Header.module.scss";
 import images from "~/assets/image";
 import Button from "~/components/Button";
 import config from "~/config";
@@ -23,8 +23,8 @@ function Header() {
         </div>
 
         <div className={cx("action")}>
-          <Button register to={config.routes.login}>Register</Button>
-          <Button primary to={config.routes.login}>Login</Button>
+          <Button register >Register</Button>
+          <Button primary>Login</Button>
         </div>
       </div>
     </header>
